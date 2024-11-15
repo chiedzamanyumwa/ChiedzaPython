@@ -1,0 +1,13 @@
+import pickle
+
+# Save multiple DataFrames in a dictionary
+data = {'info_crsp': info_crsp, 'crsp': crsp, 'crsp_comp':crsp_comp}
+
+# Save dataframe in your local directory- define 'loc' using your local directory 
+loc=''
+fname=loc+'\assignment6.pkl'
+
+with open(fname, 'wb') as file:
+    pickle.dump(data, file)
+    
+#Post Pickle file in your Github
